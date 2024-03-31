@@ -6,7 +6,7 @@ tags = [
     "bytegolf",
 ]
 date = "2024-03-24"
-series = ["Bytegolf"]
+projects = ["Bytegolf", "Bytegolf Compiler"]
 author = "Squwid"
 +++
 
