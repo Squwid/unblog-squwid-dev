@@ -53,7 +53,7 @@ markup:
     lineNos: false
     lineNumbersInTable: true
     noClasses: true
-    style: monokai
+    style: catppuccin-latte
     tabWidth: 4
   tableOfContents:
     endLevel: 6
