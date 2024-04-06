@@ -5,7 +5,7 @@ tags = [
     "go",
     "bytegolf",
 ]
-date = "2024-03-24"
+date = "2024-03-30"
 projects = ["Bytegolf", "Bytegolf Compiler"]
 author = "Squwid"
 +++
