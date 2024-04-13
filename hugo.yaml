@@ -2,7 +2,7 @@ baseURL: https://blog.squwid.dev/
 languageCode: en-us
 defaultContentLanguage: en
 theme: papercss-hugo-theme
-title: Squwid's Un-Blog
+title: Squwid's Blog
 
 imaging:
   quality: 99
@@ -21,12 +21,15 @@ menu:
     - name: Posts
       url: /
       weight: 1
-    - name: Tags
-      url: /tags/
+    - name: Projects
+      url: /projects/
       weight: 2
     - name: About
       url: /about
       weight: 3
+
+taxonomies:
+  proect: projects
 
 markup:
   defaultMarkdownHandler: goldmark

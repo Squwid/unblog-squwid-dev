@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ $pages := .Pages }}
+{{ range $pages.ByPublishDate.Reverse }}
+  <h2 class="post-list {{ if ne .Params.show_summary false }}summary{{ end }}">
+    <a href="{{ .RelPermalink }}">
+      {{ .Title }}
+    </a>
+  </h2>
+  <p class="post-meta">
+    {{ .Date.Format "January 2, 2006" }}
+  </p>
+  {{ if ne .Params.show_summary false }}
+    {{ .Summary }}
+  {{ end }}
+{{ end }}
+{{ end }}

@@ -1,10 +1,6 @@
 +++
 title = "Bytegolf Compiler"
-description = ""
-tags = [
-    "go",
-    "bytegolf",
-]
+description = "Some quick description"
 date = "2024-03-30"
 projects = ["Bytegolf", "Bytegolf Compiler"]
 author = "Squwid"
@@ -88,6 +84,7 @@ is wrapped in a CLI allowing for the following to be configured:
 | `timeout` | 30 | Container timeout in seconds. |
 | `workers` | 4 | Number of concurrent workers. |
 | `port` | 8080 | Port to run the compiler on. |
+| `--gvisor` | false | Use [gVisor](https://gvisor.dev/) for increased container security (requires runsc). |
 
 #### Workers
 
