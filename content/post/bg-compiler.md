@@ -1,6 +1,6 @@
 +++
 title = "Bytegolf Compiler"
-description = "Some quick description"
+description = "What is the Bytegolf compiler?"
 date = "2024-03-30"
 projects = ["Bytegolf", "Bytegolf Compiler"]
 author = "Squwid"
@@ -30,7 +30,7 @@ the Bytegolf Compiler was born.
 ## Architecture
 
 <p align="center">
-  <img src="https://img.squwid.dev/zsxaQONoui.png" alt="Bytegolf Compiler Architecture">
+  <img src="https://img.byte.golf/RZ2akDvC2moX.png" alt="Bytegolf Compiler Architecture">
 </p>
 
 The Bytegolf Compiler is run as a singleton web server that runs on the **same level**
