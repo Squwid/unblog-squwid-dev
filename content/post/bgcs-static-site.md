@@ -8,7 +8,7 @@ author = "Squwid"
 
 There is an inherit problem with Google Cloud Storage site hosting on GCP, which is that to enable HTTPS you must put a load balancer in front of the storage bucket. For small static websites with low amounts of traffic, adding a load balancer can get expensive quick (upwards of 20$ per month)!  This is where [bgcs-site-proxy](https://github.com/Squwid/bgcs-site-proxy) comes in handy.
 
-# BGCS Site Proxy
+## BGCS Site Proxy
 
 Let me start with saying that for most cases of static website hosting HTTPS is absolutely not a requirement, it is still a good look for modern websites in 2024. This website (my [blog website](https://blog.squwid.dev/)) is an example for using the static-site wrapper. 
 
@@ -18,7 +18,7 @@ I originally leveraged a Google Cloud Load Balancer as suggested [by the documen
   <img src="https://img.byte.golf/hLctaQ97JfJV.png" alt="Load Balancer Configuration">
 </p>
 
-### Cloud Run
+## Cloud Run
 
 This got me thinking back to my favorite way to host websites with small amounts of traffic: [Google Cloud Run](https://cloud.google.com/run?hl=en). Cloud Run is a serverless platform that allows for running of containerized applications, which you pay for variably based on the amount of traffic your instance gets. Cloud Run also allows to map custom domains to containers and handles SSL certificates automatically for secure HTTPS connections.
 
