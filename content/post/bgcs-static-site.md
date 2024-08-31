@@ -2,7 +2,7 @@
 title = "GCS Static Site with HTTPS"
 description = "A GCS static site wrapper for Cloud Run."
 date = "2024-08-24"
-projects = ["BGCS"]
+projects = ["BGCS", "Squwid's Blog"]
 author = "Squwid"
 +++
 
@@ -27,12 +27,13 @@ The idea was to basically create a load balancer Docker container that would rea
 Most of this comes with the path logic of correctly mapping requests to their file, for instance a request to `/about` should fetch the file `/about/index.html` from the specified bucket.
 
 ```go
+var defaultFile = "index.html"
+
 func modifyPath(path string) string {
-	if filepath.Ext(path) == "" {
-		path += "/"
-	}
 	if len(path) == 0 || path[len(path)-1] == '/' {
 		path += defaultFile
+	} else if filepath.Ext(path) == "" {
+		path += "/" + defaultFile
 	}
 	return path
 }
