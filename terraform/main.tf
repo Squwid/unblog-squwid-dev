@@ -19,7 +19,7 @@ terraform {
 
 locals {
   project       = "squid-cloud"
-  backend_image = "squwid/bgcs-site-proxy:v0.1"
+  backend_image = "squwid/bgcs-site-proxy:v0.2"
   backend_url   = "blog.squwid.dev"
 }
 
